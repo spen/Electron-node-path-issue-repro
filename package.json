@@ -1,0 +1,17 @@
+{
+  "name": "tester",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^1.6.2"
+  },
+  "scripts": {
+    "electron-root": "NODE_PATH=. electron .",
+    "electron-message": "NODE_PATH=./message-lives-here electron .",
+    "electron-another-message": "NODE_PATH=./another-message-lives-here electron .",
+    "root-message": "NODE_PATH=. node main-node",
+    "message": "NODE_PATH=./message-lives-here node main-node",
+    "another-message": "NODE_PATH=./another-message-lives-here node main-node"
+  }
+}
