@@ -4,6 +4,12 @@ const url = require('url')
 
 console.log( 'Logging NODE_PATH:',  process.env.NODE_PATH );
 
+const { globalPaths } = require( 'module' );
+
+globalPaths.push('.');
+
+console.log( globalPaths );
+
 const message = require( 'message' )
 
 console.log( message );
